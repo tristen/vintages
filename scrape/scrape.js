@@ -24,7 +24,7 @@ function start() {
             if (err) console.error(err);
             data = _(data).flatten();
             console.log(data.length + ' Vintages found.');
-            fs.writeFileSync('data.json', JSON.stringify(data));
+            fs.writeFileSync('../data.json', JSON.stringify(data));
         });
     });
 }
