@@ -1,0 +1,34 @@
+{
+  "name": "vintages",
+  "version": "0.0.0",
+  "description": "Fast search interface to browse wine vintages from LCBO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tristen/vintages.git"
+  },
+  "keywords": [
+    "wine",
+    "indexing",
+    "vintages"
+  ],
+  "author": "tristen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tristen/vintages/issues"
+  },
+  "homepage": "https://github.com/tristen/vintages",
+  "dependencies": {
+    "request": "2.39.0",
+    "underscore": "1.6.0",
+    "underscore.string": "2.3.3",
+    "queue-async": "1.0.7"
+  },
+  "devDependencies": {
+    "uglify-js": "~2.2.5",
+    "browserify": "~2.12.0"
+  }
+}
