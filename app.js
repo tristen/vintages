@@ -40,7 +40,7 @@ function buildmap(el, callback) {
                 '&per_page=5';
 
             $.getJSON(url, function(res) {
-                if (!res.result) return callback('No results.');
+                if (!res.result || !res.result.length) return callback('No store locations near you carry stock.');
                 var geojson = buildgeojson(res.result);
                 var map = L.mapbox.map('map-' + id, 'tristen.map-4s93c8qx', {
                     attributionControl: false,
@@ -157,7 +157,7 @@ $search.keyup(function(e) {
                         expand.appendChild(notes);
                 }
                 var map = document.createElement('div');
-                    map.className = 'map contain loading';
+                    map.className = 'map contain animate loading';
                     map.id = 'map-' + results[i].id;
 
                 var mapTitle = document.createElement('label');
@@ -230,7 +230,10 @@ $search.keyup(function(e) {
                     $('.item').removeClass('active');
                     $item.addClass('active');
                     buildmap($item.find('.expand'), function(err) {
-                        if (err) $item.find('.map').remove();
+                        if (err) {
+                            $item.find('label').text(err);
+                            $item.find('.map').addClass('error');
+                        }
                         $item.find('.map').removeClass('loading');
                     });
                 }

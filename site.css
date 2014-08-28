@@ -198,10 +198,10 @@ input {
     border-color:#000;
     }
 .animate {
-  -webkit-transition:all 150ms;
-     -moz-transition:all 150ms;
-       -o-transition:all 150ms;
-          transition:all 150ms;
+  -webkit-transition:all 200ms;
+     -moz-transition:all 200ms;
+       -o-transition:all 200ms;
+          transition:all 200ms;
   }
 
 .sprite:before {
@@ -400,6 +400,10 @@ footer {
 .expand .map {
   height:340px;
   }
+  .expand .map.error {
+    background-color:#f8f8f8;
+    height:40px;
+    }
 
 .map-label {
   font:700 12px/20px 'Helvetica Neue',sans-serif;
