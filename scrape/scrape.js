@@ -24,7 +24,7 @@ function start() {
             if (err) console.error(err);
             data = _(data).flatten();
             console.log(data.length + ' Vintages found.');
-            fs.writeFileSync('../data.json', JSON.stringify(data));
+            fs.writeFileSync('data.json', JSON.stringify(data));
         });
     });
 }
@@ -35,7 +35,8 @@ function page(url, callback) {
         res = JSON.parse(res.body);
         console.log('Reading page ' + res.pager.current_page);
         res = res.result.filter(function(item) {
-            return item.stock_type === 'VINTAGES';
+            return item.stock_type === 'VINTAGES' &&
+                   item.primary_category === 'Wine';
         });
 
         callback(null, res);

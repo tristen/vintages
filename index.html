@@ -5,17 +5,27 @@
   <title>LCBO Vintages</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link href='site.css' rel='stylesheet'>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.css' rel='stylesheet' />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.js'></script>
 </head>
 <body>
+  <header class='limiter vcenter pad2x'>
+    <a href='http://tristen.ca/vintages/' class='sprite logo'></a>
+    <h1><strong>LCBO</strong> <span class='quiet'>Vintages</span></h1>
+    <input class='col12' type='text' id='search' placeholder='Search wines' autofocus />
+    <nav id='autocomplete' class='dropdown'></nav>
+  </header>
 
-<div class='limiter pad4y'>
-  <input type='text' class='col12' id='search' placeholder='Search wines' autofocus />
-  <div class='space' id='autocomplete'></div>
-  <div id='output'></div>
-</div>
+  <div class='limiter pad2x'>
+    <nav class='results' id='results'></nav>
+  </div>
 
-<script src='js/jquery.min.js'></script>
-<script src='js/search.js'></script>
-<script src='app.js'></script>
+  <footer class='limiter quiet center small'>
+    Data pulled from <a href='http://lcboapi.com/'>lcboapi.com</a>. This site is not endorsed or supported by the <a href='http://lcbo.com'>LCBO</a>.
+  </footer>
+
+  <script src='js/jquery.min.js'></script>
+  <script src='js/search.js'></script>
+  <script src='app.js'></script>
 </body>
 </html>

@@ -4,9 +4,9 @@ var _s = require('underscore.string'),
 
 var words = {};
 
-fs.readdir('../indexes', function(err, files) {
+fs.readdir('indexes/', function(err, files) {
     files.map(function(f) {
-        var obj = JSON.parse(fs.readFileSync('../indexes/' + f, 'utf8'));
+        var obj = JSON.parse(fs.readFileSync('indexes/' + f, 'utf8'));
         var keys = Object.keys(obj);
         var trie = {};
         for (var i = 0; i < keys.length; i++) {
@@ -18,6 +18,6 @@ fs.readdir('../indexes', function(err, files) {
                 pos = pos[keys[i][j]];
             }
         }
-        fs.writeFileSync('../indexes/' + f + '.trie.json', JSON.stringify(trie));
+        fs.writeFileSync('indexes/' + f + '.trie.json', JSON.stringify(trie));
     });
 });

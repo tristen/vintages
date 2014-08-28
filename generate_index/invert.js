@@ -9,7 +9,7 @@ var sidx = {};
 stopwords.map(function(s) { sidx[s] = true; });
 
 var words = {};
-fs.readFile('../scrape/data.json', 'utf8', function(err, data) {
+fs.readFile('../data.json', 'utf8', function(err, data) {
     data = JSON.parse(data);
     data.map(function(f) {
         var id = f.id;
@@ -18,6 +18,7 @@ fs.readFile('../scrape/data.json', 'utf8', function(err, data) {
         // Search upon.
         if (f.tags) text.push(f.tags);
         if (f.description) text.push(f.description);
+        if (f.style) text.push(f.style);
         if (f.tasting_note) text.push(f.tasting_note);
         if (f.serving_suggestion) text.push(f.serving_suggestion);
 
@@ -39,6 +40,6 @@ fs.readFile('../scrape/data.json', 'utf8', function(err, data) {
         alpha[w[0]][w] = words[w];
     }
     for (var a in alpha) {
-        fs.writeFileSync('../indexes/' + a + '.json', JSON.stringify(alpha[a]));
+        fs.writeFileSync('indexes/' + a + '.json', JSON.stringify(alpha[a]));
     }
 });

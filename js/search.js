@@ -38,7 +38,7 @@ function search() {
         for (var i = 0; i < x.length; i++) {
             l.push({
                 id: x[i],
-                title: titles[x[i]] || ''
+                item: titles[x[i]] || ''
             });
         }
         return l;
@@ -106,11 +106,7 @@ function search() {
         var terms = cleansplit(q);
         if (!terms) return callback([]);
         function doterm(idx) {
-
-            // TODO This always grabs the last one. Consider
-            // chaining the array as separate queries.
             var term = terms.pop();
-
             getindex(term, function(index) {
                 if (!index[term]) return callback([]);
                 idx = (idx) ?
@@ -123,7 +119,6 @@ function search() {
                 } else {
                     return callback(jointitles(idx));
                 }
-
             });
         }
         doterm();
