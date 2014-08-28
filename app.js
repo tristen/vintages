@@ -71,8 +71,6 @@ function buildmap(el, callback) {
                     store.bindPopup(content);
                 });
 
-                map.doubleClickZoom.disable();
-                map.scrollWheelZoom.disable();
                 map.fitBounds(locations.getBounds());
                 callback(null);
             });
