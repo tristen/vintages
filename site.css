@@ -231,6 +231,7 @@ input {
     }
     .sprite.flag.italy:before        { background-position:0 0; }
     .sprite.flag.spain:before        { background-position:-20px 0; }
+    .sprite.flag.california:before,
     .sprite.flag.usa:before          { background-position:-40px 0; }
     .sprite.flag.australia:before    { background-position:-60px 0; }
     .sprite.flag.new-zealand:before  { background-position:-80px 0; }
