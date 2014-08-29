@@ -210,7 +210,7 @@ input {
   background-repeat:no-repeat;
   background-position:0 0;
   display:inline-block;
-  background-size:360px 140px;
+  background-size:380px 140px;
   vertical-align:middle;
   }
   .sprite.logo {
@@ -225,7 +225,7 @@ input {
     margin:0 auto 20px;
     }
   .sprite.flag:before {
-    background-position:-340px 0;
+    background-position:-360px 0;
     width:20px;
     height:20px;
     }
@@ -247,6 +247,7 @@ input {
     .sprite.flag.greece:before       { background-position:-280px 0; }
     .sprite.flag.hungary:before      { background-position:-300px 0; }
     .sprite.flag.israel:before       { background-position:-320px 0; }
+    .sprite.flag.luxembourg:before   { background-position:-340px 0; }
 
 /* Loading overlay
 ------------------------------------------------------- */
