@@ -24,6 +24,20 @@ function search() {
         });
     }
 
+    function omitLeadingZero(s) {
+        return s.replace(/^0+/, '');
+    }
+
+    function getID(id, callback) {
+        var ids = [];
+        for (var t in titles) {
+            if (t.indexOf(omitLeadingZero(id)) !== -1) {
+                ids.push(parseInt(t, 10));
+            }
+        }
+        callback(ids);
+    }
+
     function gettrie(a, callback) {
         if (tries[shard(a)]) return callback(tries[shard(a)]);
 
@@ -58,7 +72,7 @@ function search() {
         var terms = q.split(/\s+/);
         if (!terms.length) return [];
         terms = terms.map(function(t) {
-            var clean = t.replace(/[^A-Za-z]/g, '');
+            var clean = t.replace(/[^A-Za-z0-9]/g, '');
             if (!clean) return false;
             else return clean.toLowerCase();
         }).filter(function(t) {
@@ -77,29 +91,31 @@ function search() {
         if (!terms) return callback([]);
         var last = terms.pop();
         var limit = 20;
-        gettrie(last, function(trie) {
-            var pos = trie;
-            // inch up pos to end
-            var prefix = '';
-            for (var i = 0; i < last.length; i++) {
-                if (pos[last[i]]) {
-                    prefix += last[i];
-                    pos = pos[last[i]];
+        if (isNaN(parseInt(last, 10))) {
+            gettrie(last, function(trie) {
+                var pos = trie;
+                // inch up pos to end
+                var prefix = '';
+                for (var i = 0; i < last.length; i++) {
+                    if (pos[last[i]]) {
+                        prefix += last[i];
+                        pos = pos[last[i]];
+                    }
                 }
-            }
-            var strs = [];
-            function traverse(pos, prefix) {
-                if (strs.length > limit) return callback(strs);
-                if (isEmpty(pos)) {
-                    strs.push(prefix);
+                var strs = [];
+                function traverse(pos, prefix) {
+                    if (strs.length > limit) return callback(strs);
+                    if (isEmpty(pos)) {
+                        strs.push(prefix);
+                    }
+                    for (var i in pos) {
+                        traverse(pos[i], prefix + i);
+                    }
                 }
-                for (var i in pos) {
-                    traverse(pos[i], prefix + i);
-                }
-            }
-            traverse(pos, prefix);
-            return callback(strs);
-        });
+                traverse(pos, prefix);
+                return callback(strs);
+            });
+        }
     }
 
     function query(q, callback) {
@@ -107,19 +123,29 @@ function search() {
         if (!terms) return callback([]);
         function doterm(idx) {
             var term = terms.pop();
-            getindex(term, function(index) {
-                if (!index[term]) return callback([]);
-                idx = (idx) ?
-                    intersect(idx, index[term]) :
-                    idx = index[term];
+            if (!isNaN(parseInt(term, 10)) && term.length > 2) {
+                getID(term, function(res) {
+                    if (terms.length) {
+                        doterm(idx);
+                    } else {
+                        return callback(jointitles(res));
+                    }
+                });
+            } else {
+                getindex(term, function(index) {
+                    if (!index[term]) return callback([]);
+                    idx = (idx) ?
+                        intersect(idx, index[term]) :
+                        idx = index[term];
 
-                if (!idx) return callback([]);
-                if (terms.length) {
-                    doterm(idx);
-                } else {
-                    return callback(jointitles(idx));
-                }
-            });
+                    if (!idx) return callback([]);
+                    if (terms.length) {
+                        doterm(idx);
+                    } else {
+                        return callback(jointitles(idx));
+                    }
+                });
+            }
         }
         doterm();
     }
