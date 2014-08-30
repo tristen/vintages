@@ -71,9 +71,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="392.25166"
-     inkscape:cy="128.2289"
+     inkscape:zoom="4"
+     inkscape:cx="366.03845"
+     inkscape:cy="227.6223"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1501,5 +1501,48 @@
        id="path6365"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
+    <rect
+       style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect6367"
+       width="25"
+       height="45.000031"
+       x="350"
+       y="792.36218"
+       inkscape:export-filename="../marker@2x.png"
+       inkscape:export-xdpi="180"
+       inkscape:export-ydpi="180" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.2;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path6372"
+       sodipodi:cx="365"
+       sodipodi:cy="-67.5"
+       sodipodi:rx="15"
+       sodipodi:ry="7.5"
+       d="m 380,-67.5 a 15,7.5 0 1 1 -30,0 15,7.5 0 1 1 30,0 z"
+       transform="matrix(0.63333351,0,0,0.86666667,131.33326,889.3622)"
+       inkscape:export-filename="../marker@2x.png"
+       inkscape:export-xdpi="180"
+       inkscape:export-ydpi="180" />
+    <path
+       transform="translate(0,912.3622)"
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 375,-102.5 c 0,6.903559 -12.5,22.5 -12.5,22.5 0,0 -12.5,-15.596441 -12.5,-22.5 0,-6.90356 5.59644,-12.5 12.5,-12.5 6.90356,0 12.5,5.59644 12.5,12.5 z"
+       id="path6374"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="scsss"
+       inkscape:export-filename="../marker@2x.png"
+       inkscape:export-xdpi="180"
+       inkscape:export-ydpi="180" />
+    <path
+       transform="matrix(1.2666667,0,0,1.2666663,-96.666667,939.6955)"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 370,-102.5 c 10e-6,4.342103 -7.5,13.815791 -7.5,13.815791 0,0 -7.49999,-9.473688 -7.5,-13.815791 -10e-6,-4.34211 3.35786,-7.5 7.5,-7.5 4.14214,0 7.49999,3.15789 7.5,7.5 z"
+       id="path6392"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="scsss"
+       inkscape:export-filename="../marker@2x.png"
+       inkscape:export-xdpi="180"
+       inkscape:export-ydpi="180" />
   </g>
 </svg>

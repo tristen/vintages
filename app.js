@@ -51,9 +51,16 @@ function buildmap(el, callback) {
 
                 locations.eachLayer(function(store) {
                     var props = store.feature.properties;
+                    var m = L.divIcon({
+                        className: 'location-point',
+                        iconSize: [25,45],
+                        html: props.quantity,
+                        popupAnchor: [0, -25]
+                    });
+
                     var content = document.createElement('div');
                     var quantity = document.createElement('h4');
-                        quantity.innerHTML = props.quantity;
+                        quantity.innerHTML = props.quantity + ' in stock.';
 
                     var hours = document.createElement('a');
                         hours.innerHTML = 'Store details';
@@ -68,6 +75,8 @@ function buildmap(el, callback) {
                     content.appendChild(quantity);
                     content.appendChild(address);
                     content.appendChild(hours);
+
+                    store.setIcon(m);
                     store.bindPopup(content);
                 });
 
@@ -91,12 +100,10 @@ function buildgeojson(data) {
                 "coordinates": [item.longitude, item.latitude]
             },
             "properties": {
-                "quantity": item.quantity + " in stock.",
+                "quantity": item.quantity,
                 "city": item.city,
                 "address": item.address_line_1,
-                "storeURL": 'http://lcbosearch.com/stores/' + item.id,
-                "marker-symbol": "alcohol-shop",
-                "marker-color": "#f6303f"
+                "storeURL": 'http://lcbosearch.com/stores/' + item.id
             }
         });
         return memo;
