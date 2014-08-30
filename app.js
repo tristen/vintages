@@ -52,7 +52,7 @@ function buildmap(el, callback) {
                 locations.eachLayer(function(store) {
                     var props = store.feature.properties;
                     var m = L.divIcon({
-                        className: 'location-point',
+                        className: 'location-point digits-' + props.quantity.toString().length,
                         iconSize: [25,45],
                         html: props.quantity,
                         popupAnchor: [0, -25]
