@@ -9,7 +9,7 @@ var sidx = {};
 stopwords.map(function(s) { sidx[s] = true; });
 
 var words = {};
-fs.readFile('../data.json', 'utf8', function(err, data) {
+fs.readFile(__dirname + '/../data.json', 'utf8', function(err, data) {
     data = JSON.parse(data);
     data.map(function(f) {
         var id = f.id;
