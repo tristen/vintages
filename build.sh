@@ -12,7 +12,7 @@ node scrape/scrape.js
 node scrape/titles.js
 
 echo ""
-echo "Generative indexes ..."
+echo "Generate indexes ..."
 
 rm -rf indexes/*
 
