@@ -192,10 +192,14 @@ Details: http://www.positioniseverything.net/easyclearing.html
   }
 input {
   background:#fff;
-  border:1px solid #404040;
+  border:1px solid rgba(0,0,0,0.5);
+  -webkit-transition:border-color 150ms;
+     -moz-transition:border-color 150ms;
+       -o-transition:border-color 150ms;
+          transition:border-color 150ms;
   }
   input:focus {
-    border-color:#000;
+    border-color:#404040;
     }
 .animate {
   -webkit-transition:all 200ms;
@@ -455,6 +459,9 @@ footer {
     }
 
 @media only screen and (max-width:640px) {
+.sprite.logo:before { background-size:100%; height:100px; }
+header { margin:20px 0 0; padding:0; }
+.map-label { width:100%; text-align:center; }
 .hide-mobile { display:none; }
 .pad4y { padding-top:20px; padding-bottom:20px; }
 .pad2y { padding-top:10px; padding-bottom:10px; }

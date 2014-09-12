@@ -42,7 +42,7 @@ function buildmap(el, callback) {
             $.getJSON(url, function(res) {
                 if (!res.result || !res.result.length) return callback('No store locations near you carry stock.');
                 var geojson = buildgeojson(res.result);
-                var map = L.mapbox.map('map-' + id, 'tristen.6e4c46fc', {
+                var map = L.mapbox.map('map-' + id, 'tristen.jfooa3j0', {
                     attributionControl: false,
                     infoControl: true
                 });
