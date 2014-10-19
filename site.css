@@ -45,25 +45,25 @@ table { border-collapse: collapse; border-spacing:0; }
   font-family:'Vollkorn';
   font-weight:400;
   font-style:normal;
-  src:url('font/vollkorn-regular.eot');
-  src:url('font/vollkorn-regular.eot?#iefix') format('embedded-opentype'),
-      url('font/vollkorn-regular.woff') format('woff');
+  src:url('../font/vollkorn-regular.eot');
+  src:url('../font/vollkorn-regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/vollkorn-regular.woff') format('woff');
   }
 @font-face {
   font-family:'Vollkorn';
   font-weight:400;
   font-style:italic;
-  src:url('font/vollkorn-italic.eot');
-  src:url('font/vollkorn-italic.eot?#iefix') format('embedded-opentype'),
-      url('font/vollkorn-italic.woff') format('woff');
+  src:url('../font/vollkorn-italic.eot');
+  src:url('../font/vollkorn-italic.eot?#iefix') format('embedded-opentype'),
+      url('../font/vollkorn-italic.woff') format('woff');
   }
 @font-face {
   font-family:'Vollkorn';
   font-weight:700;
   font-style:normal;
-  src:url('font/vollkorn-bold.eot');
-  src:url('font/vollkorn-bold.eot?#iefix') format('embedded-opentype'),
-      url('font/vollkorn-bold.woff') format('woff');
+  src:url('../font/vollkorn-bold.eot');
+  src:url('../font/vollkorn-bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/vollkorn-bold.woff') format('woff');
   }
 *, *:after, *:before {
   -webkit-box-sizing:border-box;
@@ -265,7 +265,7 @@ input {
   z-index:10;
   }
 .loading:before {
-  background:rgba(0,0,0,0.10);
+  background:rgba(0,0,0,0.15);
   left:0;
   top:0;
   width:100%;
@@ -406,6 +406,7 @@ footer {
   height:auto;
   }
 .expand .map {
+  background:#f8f8f8;
   height:340px;
   }
   .expand .map.error {

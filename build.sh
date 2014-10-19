@@ -6,18 +6,18 @@ npm install
 echo ""
 echo "Scraping lcboapi.com ..."
 
-rm titles.json && rm data.json
+rm data/titles.json && rm data/data.json
 
-node scrape/scrape.js
-node scrape/titles.js
+node generate_data/scrape.js
+node generate_data/titles.js
 
 echo ""
 echo "Generate indexes ..."
 
-rm -rf indexes/*
+rm -rf data/indexes/*
 
-node generate_index/invert.js
-node generate_index/trie.js
+node generate_data/invert.js
+node generate_data/trie.js
 
 echo ""
 echo "Complete! now type npm start"

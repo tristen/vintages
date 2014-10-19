@@ -22,14 +22,16 @@
   },
   "homepage": "https://github.com/tristen/vintages",
   "dependencies": {
+    "d3": "^3.4.13",
+    "queue-async": "1.0.7",
     "request": "2.39.0",
     "underscore": "1.6.0",
-    "underscore.string": "2.3.3",
-    "queue-async": "1.0.7"
+    "underscore.string": "2.3.3"
   },
   "devDependencies": {
-    "uglify-js": "~2.2.5",
+    "browserify": "~2.12.0",
     "serve": "^1.4.0",
-    "browserify": "~2.12.0"
+    "smash": "0.0.14",
+    "uglify-js": "~2.2.5"
   }
 }

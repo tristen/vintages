@@ -4,9 +4,9 @@
 <meta charset=utf-8 />
   <title>LCBO Vintages</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <link href='site.css' rel='stylesheet'>
   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.css' rel='stylesheet' />
   <script src='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.js'></script>
+  <link href='site.css' rel='stylesheet'>
 </head>
 <body>
   <header class='limiter vcenter pad2x'>
@@ -24,12 +24,10 @@
     Data pulled from <a href='http://lcboapi.com/'>lcboapi.com</a>. This site is not endorsed or supported by the LCBO. <a href='https://github.com/tristen/vintages/issues/' target='_blank'>Feedback?</a>
   </footer>
 
-  <script src='js/jquery.min.js'></script>
-  <script src='js/search.js'></script>
-  <script src='app.js'></script>
+  <script src='js/site.js'></script>
   <script>
-  var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
-  analytics.load("ppyh4q5xb3");
+  var analytics=analytics||[];(function(){var e=['identify','track','trackLink','trackForm','trackClick','trackSubmit','page','pageview','ab','alias','ready','group'],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src=('https:'===document.location.protocol?'https://':'http://')+'d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/'+e+'/analytics.min.js';var n=document.getElementsByTagName('script')[0];n.parentNode.insertBefore(t,n)};
+  analytics.load('ppyh4q5xb3');
   </script>
 </body>
 </html>
