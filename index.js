@@ -224,7 +224,6 @@ function keyup() {
     }
 }
 
-d3.select('body').classed('loading', true);
 d3.json('data/data.json', function(err, res) {
     if (err) return console.error('data.json could not be found.');
     d3.select('body').classed('loading', false);
