@@ -219,13 +219,13 @@ input {
   vertical-align:middle;
   }
   .sprite.logo {
-    width:340px;
+    width:420px;
     margin:auto;
     display:block;
     }
   .sprite.logo:before {
     background-position:0 -20px;
-    width:340px;
+    width:420px;
     height:120px;
     margin:0 auto 20px;
     }
@@ -462,7 +462,7 @@ footer {
 
 @media only screen and (max-width:640px) {
 .limiter { width:100%; }
-.sprite.logo:before { background-size:100%; height:100px; }
+.sprite.logo:before { background-position:-40px -20px; height:120px; margin:0 auto;}
 header { margin:20px 0 0; padding:0; }
 .map-label { width:100%; text-align:center; }
 .hide-mobile { display:none; }
