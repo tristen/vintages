@@ -216,16 +216,9 @@ function keyup() {
                     .on('click', function() {
                         d3.event.preventDefault();
                         d3.event.stopPropagation();
-                        var s = $search.attr('value');
-                        var terms = s.split(/\s+/);
-
-                        if (!terms) return;
-                        terms[terms.length - 1] = this.innerHTML;
                         $search
-                            .attr('value', terms.join(' '))
+                            .attr('value', this.textContent)
                             .each(keyup);
-
-                        document.getElementById('search').focus();
                     });
         });
     }
