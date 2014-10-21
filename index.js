@@ -101,8 +101,10 @@ function buildResults(d) {
     var details = item.append('div')
         .attr('class', 'col10 pad0y pad0x');
 
-    details.append('img')
-        .attr('class', 'block fl')
+    var img = details.append('div')
+        .attr('class', 'square fl');
+
+    img.append('img')
         .attr('data-error', 'img/missing.png')
         .attr('src', d.item.img)
         .on('error', function() {
@@ -139,25 +141,26 @@ function buildResults(d) {
 
 
     var meta = details.append('div')
-        .attr('class', 'meta small quiet')
+        .attr('class', 'meta small');
 
     meta.append('span')
         .attr('class', 'sprite flag ' + normalizeClass(d.item.origin));
 
     meta.append('span')
-        .html(d.item.producer);
+        .html(d.item.producer)
+        .attr('class', 'quiet');
 
     meta.append('span')
-        .html(d.item.origin);
+        .html(d.item.origin)
+        .attr('class', 'quiet');
 
-    meta.append('a')
-        .attr('href', LCBO + d.item.id)
-        .attr('target', '_blank')
-        .text('LCBO');
-
-    item.append('span')
-        .attr('class', 'text-right col2 pad1x pad2y')
+    meta.append('span')
         .text('$' + d.item.price / 100);
+
+    //meta.append('a')
+        //.attr('href', LCBO + d.item.id)
+        //.attr('target', '_blank')
+        //.text('LCBO');
 
     // Exanded results.
     var expand = result.append('div')

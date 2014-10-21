@@ -296,11 +296,17 @@ input {
 .results > div:last-child {
   border:0;
   }
-.results > div img {
+.results .square {
   width:60px;
   height:60px;
   margin-right:10px;
   }
+  .results .square img {
+    max-width:100%;
+    display:block;
+    margin:0 auto;
+    max-height:60px;
+    }
 nav div h3 {
   padding-top:3px;
   }
@@ -318,7 +324,7 @@ nav div h3 a {
   }
 
 header {
-  margin-top:100px;
+  margin-top:60px;
   margin-bottom:10px;
   position:relative;
   }
