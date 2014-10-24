@@ -96,7 +96,7 @@ function buildgeojson(data) {
 function buildResults(d) {
     var result = d3.select(this);
     var item = result.append('div')
-        .attr('class', 'col12 clearfix');
+        .attr('class', 'col12 contain clearfix');
 
     var details = item.append('div')
         .attr('class', 'col10 pad0y pad0x');
@@ -157,7 +157,10 @@ function buildResults(d) {
     meta.append('span')
         .text('$' + d.item.price / 100);
 
-    //meta.append('a')
+    var actions = item.append('div')
+        .attr('class', 'pin-right pad1x pad1y small');
+
+    //actions.append('a')
         //.attr('href', LCBO + d.item.id)
         //.attr('target', '_blank')
         //.text('LCBO');

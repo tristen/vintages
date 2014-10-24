@@ -155,6 +155,11 @@ a:active { color:#822033; }
 
 .fl { float:left; }
 
+.pin-right {
+  position:absolute;
+  right:0;
+  }
+
 /* Markup free clearing
 Details: http://www.positioniseverything.net/easyclearing.html
 ------------------------------------------------------- */
@@ -215,7 +220,7 @@ input {
   background-repeat:no-repeat;
   background-position:0 0;
   display:inline-block;
-  background-size:420px 140px;
+  background-size:420px 160px;
   vertical-align:middle;
   }
   .sprite.logo {
@@ -224,10 +229,13 @@ input {
     display:block;
     }
   .sprite.logo:before {
-    background-position:0 -20px;
+    background-position:0 -40px;
     width:420px;
     height:120px;
     margin:0 auto 20px;
+    }
+  .sprite.permalink:before {
+    background-position:0 -20px;
     }
   .sprite.flag:before {
     background-position:-400px 0;
@@ -468,7 +476,7 @@ footer {
 
 @media only screen and (max-width:640px) {
 .limiter { width:100%; }
-.sprite.logo:before { background-position:-40px -20px; height:120px; margin:0 auto;}
+.sprite.logo:before { background-position:-40px -40px; height:120px; margin:0 auto;}
 header { margin:20px 0 0; padding:0; }
 .map-label { width:100%; text-align:center; }
 .hide-mobile { display:none; }
