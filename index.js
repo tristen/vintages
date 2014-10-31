@@ -194,6 +194,10 @@ function normalizeClass(input) {
     return input.split(',')[0].toLowerCase().replace(/\s/g, '-');
 }
 
+function commafy(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 function keyup() {
     $results.html('');
     $autocomplete.html('');
@@ -234,7 +238,7 @@ d3.json('data/data.json', function(err, res) {
     if (err) return console.error('data.json could not be found.');
     d3.select('body').classed('loading', false);
     $search
-        .attr('placeholder', 'Search ' + res.length + ' wines')
+        .attr('placeholder', 'Search ' + commafy(res.length) + ' wines')
         .on('keyup', keyup);
 
     var val = ('object' === typeof window.location.hash.slice('+')) ?
