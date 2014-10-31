@@ -220,17 +220,17 @@ input {
   background-repeat:no-repeat;
   background-position:0 0;
   display:inline-block;
-  background-size:420px 160px;
+  background-size:440px 160px;
   vertical-align:middle;
   }
   .sprite.logo {
-    width:420px;
+    width:440px;
     margin:auto;
     display:block;
     }
   .sprite.logo:before {
     background-position:0 -40px;
-    width:420px;
+    width:440px;
     height:120px;
     margin:0 auto 20px;
     }
@@ -238,24 +238,34 @@ input {
     background-position:0 -20px;
     }
   .sprite.flag:before {
-    background-position:-400px 0;
+    background-position:-420px 0;
     width:20px;
     height:20px;
     }
+    .sprite.flag.tuscany:before,
     .sprite.flag.italy:before        { background-position:0 0; }
+    .sprite.flag.bierzo:before,
+    .sprite.flag.penedes:before,
     .sprite.flag.spain:before        { background-position:-20px 0; }
     .sprite.flag.california:before,
+    .sprite.flag.united-states:before,
     .sprite.flag.usa:before          { background-position:-40px 0; }
     .sprite.flag.australia:before    { background-position:-60px 0; }
     .sprite.flag.new-zealand:before  { background-position:-80px 0; }
+    .sprite.flag.ontario:before,
     .sprite.flag.canada:before       { background-position:-100px 0; }
+    .sprite.flag.casablanca-valley:before,
     .sprite.flag.chile:before        { background-position:-120px 0; }
     .sprite.flag.germany:before      { background-position:-140px 0; }
+    .sprite.flag.burgundy:before,
     .sprite.flag.france:before       { background-position:-160px 0; }
+    .sprite.flag.mendoza:before,
     .sprite.flag.argentina:before    { background-position:-180px 0; }
     .sprite.flag.austria:before      { background-position:-200px 0; }
+    .sprite.flag.banat:before,
     .sprite.flag.romania:before      { background-position:-220px 0; }
     .sprite.flag.portugal:before     { background-position:-240px 0; }
+    .sprite.flag.western-cape:before,
     .sprite.flag.south-africa:before { background-position:-260px 0; }
     .sprite.flag.greece:before       { background-position:-280px 0; }
     .sprite.flag.hungary:before      { background-position:-300px 0; }
@@ -263,6 +273,8 @@ input {
     .sprite.flag.luxembourg:before   { background-position:-340px 0; }
     .sprite.flag.japan:before        { background-position:-360px 0; }
     .sprite.flag.south-korea:before  { background-position:-380px 0; }
+    .sprite.flag.danubian-plain:before,
+    .sprite.flag.bulgaria:before     { background-position:-400px 0; }
 
 /* Loading overlay
 ------------------------------------------------------- */
@@ -275,8 +287,10 @@ input {
   }
 .loading:before {
   background:rgba(0,0,0,0.15);
-  left:0;
   top:0;
+  bottom:0;
+  left:0;
+  right:0;
   width:100%;
   height:100%;
   }

@@ -23,6 +23,7 @@
   "homepage": "https://github.com/tristen/vintages",
   "dependencies": {
     "d3": "^3.4.13",
+    "diacritics": "^1.2.1",
     "queue-async": "1.0.7",
     "request": "2.39.0",
     "underscore": "1.6.0",

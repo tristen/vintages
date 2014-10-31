@@ -1,6 +1,7 @@
 (function() {
 require('./js/d3');
 var search = require('./src/search.js');
+var removeDiacritics = require('diacritics').remove;
 search.primetitles('data/titles.json');
 
 var LCBO  = 'http://www.lcbo.com/lcbo/search?searchTerm=';
@@ -106,7 +107,7 @@ function buildResults(d) {
 
     img.append('img')
         .attr('data-error', 'img/missing.png')
-        .attr('src', d.item.img)
+        .attr('src', (d.item.img) ? d.item.img : 'img/missing.png')
         .on('error', function() {
             d3.select(this)
                 .attr('src', d3.select(this).attr('data-error'));
@@ -188,10 +189,13 @@ function buildResults(d) {
     map.append('label')
         .attr('class', 'map-label')
         .html('Closest store locations with stock');
+
+    // Results have rendered.
+    d3.select(this.parentNode).classed('loading', false);
 }
 
 function normalizeClass(input) {
-    return input.split(',')[0].toLowerCase().replace(/\s/g, '-');
+    return removeDiacritics(input.split(', ').pop().toLowerCase().replace(/\s/g, '-'));
 }
 
 function commafy(x) {
@@ -199,7 +203,10 @@ function commafy(x) {
 }
 
 function keyup() {
-    $results.html('');
+    $results
+        .html('')
+        .classed('loading', true);
+
     $autocomplete.html('');
 
     if (this.value) {
