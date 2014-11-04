@@ -71,12 +71,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="-140.26929"
-     inkscape:cy="60.364643"
+     inkscape:zoom="8"
+     inkscape:cx="-81.141187"
+     inkscape:cy="203.85381"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      inkscape:window-width="1280"
      inkscape:window-height="751"
      inkscape:window-x="0"
@@ -113,6 +113,27 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-892.3622)">
+    <rect
+       inkscape:export-ydpi="89.999992"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       ry="5.6140351"
+       rx="5.6140351"
+       y="820.36218"
+       x="-96"
+       height="32"
+       width="32"
+       id="rect3296"
+       style="fill:none;fill-opacity:1" />
+    <path
+       id="path3377"
+       d="m -42,828.3622 c -1,0 -1,1 -1,1 l 0,1 0,1 0,4 0,2.375 c -2.334207,0.81772 -4,3.00272 -4,5.625 l 0,3 0,6 14,0 0,-6 0,-3 c 0,-2.62228 -1.665793,-4.80728 -4,-5.625 l 0,-2.375 0,-4 0,-1 0,-1 c 0,0 0,-1 -1,-1 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="scccccsccccscccccss"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-ydpi="89.999992" />
     <rect
        style="fill:#eeeeee;fill-opacity:1;stroke:none"
        id="rect3910"
@@ -774,7 +795,7 @@
        sodipodi:cy="120"
        sodipodi:rx="160"
        sodipodi:ry="30"
-       d="m 320,120 a 160,30 0 1 1 -320,0 160,30 0 1 1 320,0 z"
+       d="m 320,120 c 0,16.56854 -71.63444,30 -160,30 C 71.63444,150 0,136.56854 0,120 0,103.43146 71.63444,90 160,90 c 88.36556,0 160,13.43146 160,30 z"
        transform="matrix(1.0625,0,0,0.75000002,50,939.8622)" />
     <path
        id="path14759"
@@ -1369,7 +1390,7 @@
        sodipodi:cy="8.5"
        sodipodi:rx="3.5"
        sodipodi:ry="3.5"
-       d="m 374,8.5 a 3.5,3.5 0 1 1 -7,0 3.5,3.5 0 1 1 7,0 z"
+       d="m 374,8.5 c 0,1.932997 -1.567,3.5 -3.5,3.5 -1.933,0 -3.5,-1.567003 -3.5,-3.5 0,-1.9329966 1.567,-3.5 3.5,-3.5 1.933,0 3.5,1.5670034 3.5,3.5 z"
        transform="matrix(1.0000015,0,0,0.99999937,-0.5005505,892.3622)" />
     <path
        inkscape:connector-curvature="0"
@@ -1436,7 +1457,7 @@
        sodipodi:cy="-67.5"
        sodipodi:rx="15"
        sodipodi:ry="7.5"
-       d="m 380,-67.5 a 15,7.5 0 1 1 -30,0 15,7.5 0 1 1 30,0 z"
+       d="m 380,-67.5 c 0,4.142136 -6.71573,7.5 -15,7.5 -8.28427,0 -15,-3.357864 -15,-7.5 0,-4.142136 6.71573,-7.5 15,-7.5 8.28427,0 15,3.357864 15,7.5 z"
        transform="matrix(0.63333351,0,0,0.86666667,332.24852,838.0556)"
        inkscape:export-filename="../marker@2x.png"
        inkscape:export-xdpi="180"
@@ -2061,5 +2082,129 @@
        d="m 420,905.3622 c 0,1 -1,2 -2,2 l -16,0 c -1,0 -2,-1 -2,-2 l 0,-2 20,0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssscc" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path3348"
+       d="m -46,843.37974 12.769137,0 0,8.98246 -12.769137,0 z"
+       style="color:#000000;fill:#822033;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-ydpi="89.999992" />
+    <rect
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3350"
+       width="12.999999"
+       height="1.0000098"
+       x="-46"
+       y="844.36218"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-ydpi="89.999992" />
+    <rect
+       inkscape:export-ydpi="89.999992"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       y="846.36218"
+       x="-46"
+       height="1.0000098"
+       width="12.999999"
+       id="rect3352"
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3354"
+       width="12.999999"
+       height="1.0000098"
+       x="-46"
+       y="846.36218"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-ydpi="89.999992" />
+    <rect
+       inkscape:export-ydpi="89.999992"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       y="848.36218"
+       x="-46"
+       height="1.0000098"
+       width="12.999999"
+       id="rect3356"
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3358"
+       width="12.999999"
+       height="1.0000098"
+       x="-46"
+       y="850.36218"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-ydpi="89.999992" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       d="m -42,828.3622 c -1,0 -1,1 -1,1 l 0,1 0,1 0,4 0,2.375 c -2.334207,0.81772 -4,3.00272 -4,5.625 l 0,3 0,6 1,0 0,-1 0,-2 0,-3.1875 0,-2.625 c 0,-2.4757 1.712422,-4.53442 4,-5.0625 l 0,-0.125 0,-0.90625 0,-0.34375 0,-5.75 4,0 0,5.75 0,0.34375 0,0.90625 0,0.125 c 2.287578,0.52808 4,2.5868 4,5.0625 l 0,2.625 0,3.1875 0,2 0,1 1,0 0,-6 0,-3 c 0,-2.62228 -1.665793,-4.80728 -4,-5.625 l 0,-2.375 0,-4 0,-1 0,-1 c 0,0 0,-1 -1,-1 l -4,0 z m 1,1 2,0 c 0.809524,0 0.97063,0.34467 1,1 l -4,0 c 0.02937,-0.65533 0.190476,-1 1,-1 z"
+       id="rect3324"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-ydpi="89.999992"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="ssccccscsss"
+       inkscape:connector-curvature="0"
+       id="path4190"
+       d="m -80.5,820.3622 c -2,0 -3,0.99968 -3,3 l 0,11 c -5,2 -7,5 -7,11 l 0,7 21,0 0,-7 c 0,-6 -2.5,-9 -7.5,-11 l 0,-11 c 0,-2.00005 0.5,-3 -1.5,-3 z"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-ydpi="89.999992" />
+    <path
+       inkscape:export-ydpi="89.999992"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4171"
+       d="m -90.03615,843.3622 20.53615,0 0,9 -20.53615,0 z"
+       style="color:#000000;fill:#8c9a39;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="89.999992"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       y="846.36218"
+       x="-90.5"
+       height="2.0000153"
+       width="19.499996"
+       id="rect4175"
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       inkscape:export-ydpi="89.999992"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4177"
+       width="19.499996"
+       height="2.0000153"
+       x="-90.5"
+       y="849.36218" />
+    <path
+       style="color:#000000;fill:#0a0a0a;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -81,820.3622 c -2,0 -3,0.99968 -3,3 l 0,10 c -5,2 -6.5,6 -6.5,12 l 0,7 2,0 0,-7 c 0,-5.29436 1.23754,-8.98746 5.65625,-10.65625 L -82,834.3622 l 0,-8 4,0 0,8 0.84375,0.3125 c 4.41864,1.6688 5.65625,5.39313 5.65625,10.6875 l 0,7 2,0 0,-7 c 0,-6 -1.5,-10 -6.5,-12 l 0,-10 c 0,-2.00005 -1,-3 -3,-3 z m -0.15625,2 c 0.0937,-0.0156 0.15625,0 0.15625,0 l 2,0 c 0,0 1,-6.9e-4 1,1 l 0,1 -4,0 0,-1 c 0,-0.75 0.5625,-0.95312 0.84375,-1 z"
+       id="rect4169"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ssccccsccccccsccscssssccsccss"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-ydpi="89.999992" />
+    <rect
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4188"
+       width="19.499996"
+       height="2.0000153"
+       x="-90.5"
+       y="843.36218"
+       inkscape:export-filename="/Users/tristen/dev/github/vintages/img/favicon.png"
+       inkscape:export-xdpi="89.999992"
+       inkscape:export-ydpi="89.999992" />
   </g>
 </svg>
